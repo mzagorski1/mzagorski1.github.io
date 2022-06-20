@@ -1,0 +1,94 @@
+.footer {
+    &__container {
+        padding-bottom: 10px;
+        display: grid;
+        grid-template: 1fr/repeat(1, 1fr) 1fr;
+        grid-column-gap: 40%;
+        border-top: 1px solid #e5e5e5;
+    }
+
+    &__paragraph {
+        margin-top: 20px;
+    }
+
+    &__followers {
+        margin-top: 10%;
+        padding-bottom: 10px;
+        font-size: 14px;
+        color: #333333;
+        border-bottom: 1px solid #e5e5e5;
+
+        & span {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+
+    &__socials {
+        @include flex;
+        margin-top: 10px;
+        width: 75%;
+
+        & img {
+            width: 16px;
+        }
+    }
+
+    &__form {
+        margin-top: 2%;
+    }
+
+    &__blogs-container {
+        margin-top: 30px;
+        display: grid;
+        grid-template: repeat(3, 1fr) / 1fr;
+        row-gap: 5%;
+    }
+
+    &__instagram-container {
+        margin-top: 30px;
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        grid-gap: 2px;
+
+        & picture {
+            width: 100%;
+            display: block;
+        }
+
+        & img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    &__insta-url {
+        margin-top: 10px;
+        display: block;
+        text-decoration: none;
+        align-self: center;
+    }
+
+    &__credentials {
+        padding: 2%;
+        font-size: 14px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+
+        & span {
+            color: $color-gradient-top;
+            padding-left: 5px;
+        }
+    }
+
+    &__icon-credentials {
+        text-align: center;
+
+        & a {
+            text-decoration: none;
+            color: $color-main-dark;
+            font-size: 8px;
+        }
+    }
+}

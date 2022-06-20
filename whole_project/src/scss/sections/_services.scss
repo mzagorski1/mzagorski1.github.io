@@ -1,0 +1,10 @@
+.section-services {
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+    &__offer-items {
+        margin-top: 50px;
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    }
+}

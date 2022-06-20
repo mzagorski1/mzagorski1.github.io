@@ -1,0 +1,16 @@
+@import "abstracts/variable.scss";
+@import "abstracts/mixins.scss";
+
+@import "core/general.scss";
+@import "core/typography.scss";
+
+@import "sections/header.scss";
+@import "sections/team.scss";
+@import "sections/services.scss";
+@import "sections/footer.scss";
+
+@import "components/navigation.scss";
+@import "components/button.scss";
+@import "components/footer-form.scss";
+@import "components/photo.scss";
+@import "components/offer-item.scss";

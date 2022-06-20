@@ -1,0 +1,39 @@
+.btn {
+    background: none;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+        transition: all 0.3s;
+    }
+
+    &--learn {
+        padding: 10px 3%;
+        border: 2px solid #FFF;
+
+        &:hover {
+            background-color: rgba(51, 51, 51, 0.384);
+        }
+    }
+
+    &--subscribe {
+        color: #FFF;
+        background-color: $color-services-icons-background;
+
+        &:hover {
+            background-color: #f38181;
+            opacity: 0.8;
+        }
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}

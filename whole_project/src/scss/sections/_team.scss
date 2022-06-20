@@ -1,0 +1,26 @@
+.section-team {
+    padding-top: 0;
+    padding-bottom: 100px;
+
+    &__paragraph {
+        margin-top: 50px;
+        text-align: center;
+        padding: 0px 12%;
+    }
+
+    &__people {
+        margin-top: 8%;
+        display: grid;
+        grid-template: 1fr / repeat(3, 1fr);
+        column-gap: 2%;
+    }
+
+    &__person-details {
+        margin-top: 10px;
+        text-align: center;
+
+        &.label {
+            margin-top: 30px;
+        }
+    }
+}

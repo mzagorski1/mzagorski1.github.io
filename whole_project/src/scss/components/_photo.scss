@@ -1,0 +1,86 @@
+.photo {
+    width: 100%;
+    position: relative;
+    background-color: $color-services-icons-background;
+    cursor: pointer;
+
+    &:hover &__container,
+    &:hover &__container-port {
+        transition: transform 0.3s linear;
+
+        &::after {
+            content: "";
+            background-image:
+            linear-gradient(
+                to bottom,
+                $color-gradient-top 0,
+                $color-gradient-bottom 90%,
+            );
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 5;
+        }
+    }
+
+    &:hover &__container {
+        transform: translate(-10px, -10px);
+    }
+
+    &:hover &__social {
+        @include flex;
+    }
+
+    &__image {
+        width: 100%;
+        display: block;
+
+        & img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    &__social {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 7;
+        width: 70%;
+
+        & img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    &__social-url {
+        padding: 10px;
+        width: 25%;
+        background-color: $color-text-hover;
+        display: flex;
+        height: 56px;
+
+        &:not(:last-child) {
+            border-right: 0.2px solid $color-gradient-top;
+        }
+
+        &:hover {
+            background-color: $color-gradient-top;
+
+            & svg {
+                fill: #FFF;
+            }
+        }
+
+        & svg {
+            margin: auto;
+            fill: $color-gradient-top;
+        }
+    }
+}

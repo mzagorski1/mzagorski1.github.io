@@ -1,0 +1,52 @@
+.nav {
+    @include flex;
+
+    &__menu {
+        @include flex;
+        width: 80%;
+        list-style: none;
+    }
+
+    &__menu-item {
+        text-transform: uppercase;
+        font-size: 14px;
+
+        & a:hover {
+            padding-bottom: 5px;
+            color: $color-text-hover;
+            border-bottom: 2px solid $color-text-hover;
+        }
+    }
+
+    &__hamburger-menu {
+        display: none;
+        font-size: 25px;
+        color: #FFF;
+        cursor: pointer;
+    }
+
+    &__action-buttons {
+        padding-left: 10%;
+        width: 20%;
+        @include flex;
+
+    }
+
+    &__btn {
+        width: 20px;
+
+        & img {
+            width: 100%;
+        }
+
+        & svg {
+            fill: #FFF;
+        }
+
+        &:hover {
+            & svg {
+                fill: $color-text-hover;
+            }
+        }
+    }
+}

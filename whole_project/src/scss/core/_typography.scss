@@ -1,0 +1,87 @@
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    color: #FFF;
+
+    & a {
+        text-decoration: none;
+        color: #FFF;
+        cursor: pointer;
+    }
+
+    &--footer {
+        font-size: 46px;
+
+        & a {
+            color: #ccc;
+        }
+    }
+}
+
+.heading {
+    padding-bottom: 40px;
+    font-family: Montserrat;
+    font-size: 150px;
+    font-weight: bold;
+    line-height: 0.93;
+    text-align: center;
+    color: #FFF;
+    position: relative;
+    text-transform: uppercase;
+
+    &--section {
+        margin-top: 23px;
+        font-size: 30px;
+        color: $color-main-dark;
+        text-transform: uppercase;
+
+        &::after {
+            content: "";
+            width: 70px;
+            height: 3px;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            background-color: $color-gradient-top;
+        }
+    }
+}
+
+.subheading {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 72px;
+    font-weight: normal;
+    text-align: center;
+    color: #FFF;
+
+    &--section {
+        font-size: 24px;
+        color: $color-main-dark;
+    }
+}
+
+.paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: $color-paragraph;
+
+    &--accordion {
+        font-weight: 300;
+        font-style: italic;
+    }
+}
+
+body {
+    position: relative;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: bold;
+    color: $color-main-dark;
+    text-transform: uppercase;
+    text-decoration: none;
+}
